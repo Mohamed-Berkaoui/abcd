@@ -1,0 +1,104 @@
+*{
+
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.display1{
+display: flex;
+background-color:rgb(157, 224, 255) ;
+height: 100vh;
+overflow: hidden;
+}
+.display1 >.buttons{
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: pink;
+  border-top-right-radius: 150px;
+  border-bottom-right-radius: 150px;
+
+  gap: 30px;
+}
+.display1 .buttons-container{
+  display: flex;
+  height: fit-content;
+  gap: 80px;
+}
+.button{
+  width: 170px;
+  height: 50px;
+display: flex;
+justify-content: center;
+align-items: center;
+text-transform: uppercase;
+font-size: 1.2rem;
+transition: all 0.1s ease;
+border: 2px solid rgb(110, 110, 110);
+cursor: pointer;
+}
+
+.button1{
+  background-color: white;
+  box-shadow: 3px 3px 6px black;
+}
+
+.button2{
+  background-color: black;
+  color: white;
+  box-shadow: 3px 3px 6px rgb(0, 0, 0);
+}
+
+
+
+.display2{
+display: none;
+height: 100vh;
+background-color: pink;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+font-size: 5rem;
+color: rgb(34, 84, 84);
+
+}
+.button:hover{
+scale: 1.1;
+box-shadow: 5px 5px 15px 5px black;
+
+}
+
+.valentine-container{
+flex: 1;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: center;
+padding-top:40px;
+font-size: 3rem;
+font-weight: 900;
+color: pink;
+text-align: center;
+text-shadow: 4px 4px 6px black;
+text-transform: uppercase;
+}
+#valentine-image{
+  position: relative;
+  /* bottom: -20px; */
+  width: 100%;
+  mix-blend-mode: multiply;
+}
+#moving-text{
+  position: absolute;
+  display: none;
+  background-color: white;
+  padding: 10px 15px;
+  border-radius: 10px;
+  text-transform: uppercase;
+  box-shadow: 1px 1px 3px  black;
+  opacity: 0.8;
+}
